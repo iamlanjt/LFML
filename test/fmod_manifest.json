@@ -1,0 +1,10 @@
+{
+	"importingFile": "./main.lol",
+	"targetFiles": [
+		"./modules/*.lol"
+	],
+	"outDir": "./final",
+	"options": {
+		"doStrictVersionMatching": true
+	}
+}
