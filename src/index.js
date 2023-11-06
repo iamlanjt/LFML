@@ -1,6 +1,6 @@
 import { program } from "commander"
 import { existsSync, readFileSync, writeFileSync } from "fs"
-import { join } from "path"
+import { basename, join } from "path"
 import { cwd } from "process"
 
 // Constants
@@ -48,4 +48,4 @@ while (lastMatch !== null) {
 }
 console.log(`Finished joining ${numImports} file(s).`)
 console.log(`Attempting to write buffer to out file directory (${join(path, manifest.outDir)})...`)
-writeFileSync(join(path, manifest.outDir, manifest.importingFile), mutableSource)
+writeFileSync(join(path, manifest.outDir, basename(manifest.importingFile)), mutableSource)
