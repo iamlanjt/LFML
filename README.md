@@ -15,9 +15,7 @@ LFML is not currently finished, and not all manifest options work. Contributions
 {
 	"importingFile": "./main.lol", // The lolcode file you wish to include modules into
 	"outDir": "./final", // The direcotry LFML will dump the final code into
-	"targetFiles": [
-		"./modules/*.lol" // To be implemented
-	],
+	"modulesDir": "./modules", // The directory where LFML will fallback to for global imports; i.e, %include [testModule.lol] rather than %include [modules/testModule.lol]
 	"options": {} // To be implemented
 }
 ```
